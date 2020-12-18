@@ -18,11 +18,11 @@ public class GameJudge : MonoBehaviour
     {
         if (isWin)
         {
-            JudgeText.text = "生存";
+            JudgeText.text = "生存!!";
         }
         else
         {
-            JudgeText.text = "死亡";
+            JudgeText.text = "死亡!!";
         }
     
         
