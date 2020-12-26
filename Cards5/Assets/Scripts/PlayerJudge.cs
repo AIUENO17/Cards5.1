@@ -9,6 +9,7 @@ public class PlayerJudge : MonoBehaviour
 
     public bool Judge = false;
 
+
     public void HighJudge()
     {
         Judge = true;

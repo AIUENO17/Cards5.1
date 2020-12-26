@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameJudge : MonoBehaviour
 {
@@ -18,11 +19,17 @@ public class GameJudge : MonoBehaviour
     {
         if (isWin)
         {
-            JudgeText.text = "生存!!";
+            JudgeText.text = "Live!!";
+
+            SceneManager.LoadScene("Clear");
         }
         else
         {
-            JudgeText.text = "死亡!!";
+            JudgeText.text = "Die!!";
+            
+            SceneManager.LoadScene("Result");
+
+
         }
     
         
@@ -37,6 +44,7 @@ public class GameJudge : MonoBehaviour
         else
         {
             JudgeText.text = "CPUの勝ち";
+
         }
     }
 }

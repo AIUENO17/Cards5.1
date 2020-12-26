@@ -648,7 +648,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u52DD\u3064\u306E\u306F\uFF1F\uFF01"
+  m_Text: 'Life or death
+
+'
 --- !u!222 &778983458
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -914,10 +916,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d1800de8a45744cbc19955d7fd226b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerScoreText: {fileID: 0}
-  CPUScoreText: {fileID: 0}
-  playerScore: 1
-  cpuScore: 1
+  ScoreText: {fileID: 0}
+  HighScoreText: {fileID: 0}
+  Score: 0
+  HighScore: 0
 --- !u!1 &1601504498
 GameObject:
   m_ObjectHideFlags: 0

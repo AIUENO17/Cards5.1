@@ -6,30 +6,46 @@ using UnityEngine.UI;
 public class ScoreViewer : MonoBehaviour
 {
 
-    public Text PlayerScoreText;
-    public Text CPUScoreText;
-    public int playerScore = 0;
-    public int cpuScore;
+    public Text ScoreText;
+    public Text HighScoreText;
+    public int Score = 0;
+    public int HighScore =0;
+    
     // Start is called before the first frame update
    public  void ScoreTextInit()
     {
-        PlayerScoreText.text = string.Empty;
-        CPUScoreText.text = string.Empty;
+        ScoreText.text = string.Empty;
+        HighScoreText.text = string.Empty;
     }
 
     // Update is called once per frame
-   public  void AddScoreViewer(bool isWin)
+    public void AddScoreViewer(bool isWin)
     {
         if (isWin)
         {
-            playerScore += 2;
-            PlayerScoreText.text = $"{playerScore}";
+            Score += 1;
+            ScoreText.text = $"{Score}";
         }
         else
         {
-            cpuScore += 2;
-
-            CPUScoreText.text = $"{cpuScore}";
+            HighScore += 1;
+            HighScoreText.text = $"{HighScore}";
         }
+
+    }
+    public void ADDScoreViewer(bool isLose)
+    {
+
+        if (isLose)
+        {
+            Score += 1;
+            ScoreText.text = $"{Score}";
+        }
+        else
+        {
+            HighScore += 1;
+            HighScoreText.text = $"{HighScore}";
+        }
+    
     }
 }
