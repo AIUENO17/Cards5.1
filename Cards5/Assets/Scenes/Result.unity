@@ -216,6 +216,7 @@ RectTransform:
   - {fileID: 496058692}
   - {fileID: 2028287791}
   - {fileID: 304693046}
+  - {fileID: 1235710116}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -340,8 +341,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.7, y: -432.2}
-  m_SizeDelta: {x: 293.64215, y: 111.014435}
+  m_AnchoredPosition: {x: 30.7, y: -348}
+  m_SizeDelta: {x: 293.64215, y: 111.01453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304693047
 MonoBehaviour:
@@ -375,7 +376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8888
+  m_Text: 37564
 --- !u!222 &304693048
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -419,8 +420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: -283.6}
-  m_SizeDelta: {x: 558.217, y: 136.65353}
+  m_AnchoredPosition: {x: 37.48, y: -234.4}
+  m_SizeDelta: {x: 74.96069, y: 38.324707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496058693
 MonoBehaviour:
@@ -443,7 +444,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 1
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -560,6 +561,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235710115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235710116}
+  - component: {fileID: 1235710117}
+  m_Layer: 5
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1235710116
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235710115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 26607750}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 36, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1235710117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235710115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd0bf7f3b41de042a24e8f5310d7a62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score_object: {fileID: 304693045}
+  score_num: 0
 --- !u!1 &1929959266
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,8 +723,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.9, y: -96.7}
-  m_SizeDelta: {x: 752.3613, y: 237.1994}
+  m_AnchoredPosition: {x: 22.9, y: -151.78}
+  m_SizeDelta: {x: 752.3613, y: 203.56104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028287792
 MonoBehaviour:
@@ -709,7 +760,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Can you survive next?
 
-    ~Score~'
+'
 --- !u!222 &2028287793
 CanvasRenderer:
   m_ObjectHideFlags: 0
